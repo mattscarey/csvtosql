@@ -128,10 +128,3 @@ class Maker:
     def writeSQL(self, sql):
         with open(self.output, "w") as f:
             f.write(sql)
-
-if __name__ == "__main__":
-    ROOT = r'/home/mscarey/Correlation Project/'
-    DATA = ROOT + 'DATA/'
-    MESH = DATA + "relationsDB.csv"
-    OUT = DATA + "relations.sql"
-    Maker(MESH, OUT, "relations")
